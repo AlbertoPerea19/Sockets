@@ -1,8 +1,8 @@
 import socket
+import sys
 
-HOST = "127.0.0.1"
-PORT = 65432
-FILE_PATH = "helloWorld.txt"
+HOST, PORT, FILE_PATH = sys.argv[1], int(sys.argv[2]), sys.argv[3]
+num_clients=int(sys.argv[4])
 
 def run_client():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -18,6 +18,5 @@ def run_client():
 
 if __name__ == "__main__":
     # Simulate multiple clients
-    num_clients = 3
     for _ in range(num_clients):
         run_client()

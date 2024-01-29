@@ -1,8 +1,8 @@
 import socket
 import threading
+import sys
 
-HOST = "127.0.0.1"
-PORT = 65432
+HOST, PORT = sys.argv[1], int(sys.argv[2])
 
 def handle_client(conn, addr):
     print(f"Connected by {addr}")
