@@ -1,0 +1,7 @@
+Hello World!
+
+Esto es un archivo de texto
+para usar como ejemplo,
+deberia imprimir todas
+las lineas sin importar
+cuantas sean
