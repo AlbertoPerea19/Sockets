@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains a multi-threaded implementation of a TCP-based echo server in Python. The server listens on a specified port and handles multiple client connections concurrently. Additionally, there is a client script to connect to the server and send a file.
+This repository contains a multi-threaded implementation of a TCP/UDP-based echo server in Python. The server listens on a specified host and port, handling multiple client connections concurrently. Additionally, there is a client script to connect to the server and send a file.
 
 ## Files
 
@@ -19,13 +19,13 @@ This repository contains a multi-threaded implementation of a TCP-based echo ser
 
 2. **Run the Server:**
    ```bash
-   python echo-server.py <host> <port>
+   python echo-server.py <protocol> <host> <port>
    ```
    - The server will start and bind to the specified host and port.
 
 3. **Run the Client:**
    ```bash
-   python echo-client.py <host> <port> <file_path> <num_clients>
+   python echo-client.py <protocol> <host> <port> <file_path> <num_clients>
    ```
    - The client will connect to the server, send the content of the specified file, and receive the echoed response. The process is repeated for the specified number of clients.
 
@@ -43,4 +43,3 @@ If you would like to contribute to this project, please follow the steps mention
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
